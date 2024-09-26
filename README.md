@@ -67,9 +67,6 @@ The following network is defined in the `docker-compose.yml` file:
 
 - `network`: A custom network for the services to communicate.
 
-## Health Checks
-
-The `mongo-express` service includes a health check to ensure it is running correctly.
 
 ## Additional Commands
 
