@@ -32,8 +32,8 @@ services:
     image: mongo
     container_name: mongo
     environment:
-      MONGO_INITDB_ROOT_USERNAME: poliark
-      MONGO_INITDB_ROOT_PASSWORD: poliark
+      MONGO_INITDB_ROOT_USERNAME: bolt
+      MONGO_INITDB_ROOT_PASSWORD: bolt
       MONGO_INITDB_DATABASE: chatbot
 
     ports:
@@ -56,10 +56,10 @@ services:
       timeout: 2s
       retries: 10
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: poliark  
-      ME_CONFIG_MONGODB_ADMINPASSWORD: poliark
-      ME_CONFIG_BASICAUTH_USERNAME: poliark
-      ME_CONFIG_BASICAUTH_PASSWORD: poliark
+      ME_CONFIG_MONGODB_ADMINUSERNAME: bolt  
+      ME_CONFIG_MONGODB_ADMINPASSWORD: bolt
+      ME_CONFIG_BASICAUTH_USERNAME: bolt
+      ME_CONFIG_BASICAUTH_PASSWORD: bolt
       ME_CONFIG_MONGODB_SERVER: db
       ME_CONFIG_BASICAUTH: true
     depends_on:

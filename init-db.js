@@ -1,9 +1,9 @@
-db.auth('poliark', 'poliark');
+db.auth('bolt', 'bolt');
 db = db.getSiblingDB('chatbot');
 
 db.createUser({
-    user: "poliark",
-    pwd: "poliark",
+    user: "bolt",
+    pwd: "bolt",
     roles: [
         {
             role: "readWrite",

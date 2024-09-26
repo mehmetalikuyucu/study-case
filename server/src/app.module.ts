@@ -7,8 +7,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [ParticipantRegistryModule, ChatModule,MongooseModule.forRoot("mongodb://db:27017/chatbot",{
-    user: 'poliark',
-    pass: 'poliark',
+    user: 'bolt',
+    pass: 'bolt',
     authSource: 'admin',
   })],
   controllers: [AppController ],
